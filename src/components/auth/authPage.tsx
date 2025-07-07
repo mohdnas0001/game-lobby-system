@@ -4,8 +4,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { Label } from '@/components/ui/label';
-import { useAuth } from '@/hooks/useAuth';
 import { Gamepad2, Trophy, Users } from 'lucide-react';
+import { useAuth } from '@/hooks/useAuthHook';
 
 const AuthPage = () => {
   const [username, setUsername] = useState('');

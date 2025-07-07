@@ -1,7 +1,7 @@
 
+import { useAuth } from '@/hooks/useAuthHook';
 import AuthPage from '../components/auth/authPage';
 import GameLobby from '../components/game/GameLobby';
-import { useAuth } from '../hooks/useAuth';
 
 const Index = () => {
   const {  isAuthenticated } = useAuth();
