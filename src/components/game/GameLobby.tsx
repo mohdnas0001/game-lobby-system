@@ -66,7 +66,7 @@ const GameLobby = () => {
     if (inGame) return;
 
     fetchSession();
-    timerRef.current = setInterval(fetchSession, 5000); // Changed from 2000 to 5000
+    timerRef.current = setInterval(fetchSession, 5000); 
 
     return () => {
       if (timerRef.current) clearInterval(timerRef.current);
@@ -84,7 +84,7 @@ const GameLobby = () => {
       setTimeLeft(calculatedTimeLeft);
 
       if (calculatedTimeLeft === 0 && currentSession.isActive && !isEndingSession) {
-        clearInterval(timer); // Stop timer to prevent multiple endSession calls
+        clearInterval(timer); 
         endSession();
       }
     }, 1000);
